@@ -1,31 +1,31 @@
+import pandas as pd
+import random
+import itertools
+
+
+def create_csv(): 
+	# maybe do more candidates/names?
+	candidates = ['A', 'B', 'C', 'D', 'E'] 
+
+	candidates_ordering = list(itertools.permutations(candidates))
+
+	votes = []
+	for i in range(100000):
+		votes.append(candidates_ordering[random.randint(0, len(candidates_ordering) - 1)])
+
+	df = pd.DataFrame(votes, columns=['First', 'Second', 'Third', 'Fourth', 'Fifth'])
+
+	print(df['First'].value_counts())
+	
+	df.to_csv("./test.csv")
+
+
+
+
 """
-In this project, you'll determine how many times are you, the last voter
-of an election is the deciding vode of the election. You will write code
-that simulates an election many times and it can handle v voters and c
-candidates. In other words, your code should be able to handle any 
-arbitrary number of voters and number of candidates. 
+1. Create a better CSV
+2. 
+
+
+
 """
-
-## TODO: Write a function that determines which candidate has the most 
-## votes. 
-
-## TODO: Write a function that determines if there's a tie between any
-## two candidates in the election.
-
-## TODO: Write a function that determine if you're the deciding vote.  
-
-## TODO: Write a function that acts as one election.
-
-## TODO: Write a function that simulates the election an arbitrary number
-## of times. 
-
-def simulation(num, voters, candidates): 
-	return True
-
-
-def main(): 
-	## TODO: Call the simulation with an appropriate number of times. 
-
-	## SET THIS UP SO THAT THEY RUN MULTIPLE SIMULATIONS AND COMPARE THE RESULTS.
-
-main()
