@@ -44,7 +44,7 @@ def exhaustive_ballot():
 
 	while len(candidates_ordering) > 1: 
 		vote_count = exhaustive_election(candidates)
-
+		
 		if no candidate reaches half of total votes: 
 			remove candidate with fewest votes
 		else: 
