@@ -17,61 +17,61 @@ def create_csv():
 
 	print(df['First'].value_counts())
 	
-	df.to_csv("./codingassignments/test.csv")
+	df.to_csv("./test.csv")
 
 
 
-def ranked_choice(): 
-	pass
+# def ranked_choice(): 
+# 	pass
 
-def proportional_voting(): 
-	pass
-
-
+# def proportional_voting(): 
+# 	pass
 
 
-def exhaustive_election(candidates): 
-	vote_count = [0 for _ in range(len(candidates))]
-	for _ in range(100000):
-		# prob = random.random()
+
+
+# def exhaustive_election(candidates): 
+# 	vote_count = [0 for _ in range(len(candidates))]
+# 	for _ in range(100000):
+# 		# prob = random.random()
 		
-		### NEED TO FIGURE OUT HOW TO DO SOME VOTING SYSTEM THAT ISN'T RANDOM		
-	pass
+# 		### NEED TO FIGURE OUT HOW TO DO SOME VOTING SYSTEM THAT ISN'T RANDOM		
+# 	pass
 
 
-def exhaustive_ballot(): 
-	candidates = ['A', 'B', 'C', 'D', 'E']
+# def exhaustive_ballot(): 
+# 	candidates = ['A', 'B', 'C', 'D', 'E']
 
-	while len(candidates_ordering) > 1: 
-		vote_count = exhaustive_election(candidates)
+# 	while len(candidates_ordering) > 1: 
+# 		vote_count = exhaustive_election(candidates)
 		
-		if no candidate reaches half of total votes: 
-			remove candidate with fewest votes
-		else: 
-			candidate with most votes is winner
+# 		if no candidate reaches half of total votes: 
+# 			remove candidate with fewest votes
+# 		else: 
+# 			candidate with most votes is winner
 		
-		if there is a winner: 
-			break
+# 		if there is a winner: 
+# 			break
 
 
-	return candidate
+# 	return candidate
 
 
-	""" 
-	Questions for students to answer: 
-	1) Find an example of where this type of system is being used.
-	2) Why is this system not more commonly-used? In other words, what are the disadvantages?
+# 	""" 
+# 	Questions for students to answer: 
+# 	1) Find an example of where this type of system is being used.
+# 	2) Why is this system not more commonly-used? In other words, what are the disadvantages?
 
-	"""
+# 	"""
 
 
-def main(): 
+# def main(): 
 
-	voter_preferences = pd.read_csv("./codingassignments/test.csv")
+# 	voter_preferences = pd.read_csv("./codingassignments/test.csv")
 
-	for x in ['First', 'Second', 'Third', 'Fourth', 'Fifth']: 
-		print(voter_preferences[x].value_counts())
-	#print(type(voter_preferences['First'].value_counts()))
+# 	for x in ['First', 'Second', 'Third', 'Fourth', 'Fifth']: 
+# 		print(voter_preferences[x].value_counts())
+# 	#print(type(voter_preferences['First'].value_counts()))
 
 
 
