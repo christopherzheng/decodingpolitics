@@ -1,0 +1,46 @@
+Rank,start,end,President,Prior Title,Party,Vice President
+1,4/30/1789,3/4/1797,George Washington,Commander-in-Chief of the Continental Army,Nonpartisan,John Adams
+2,3/4/1797,3/4/1801,John Adams,Vice President,Federalist,Thomas Jefferson
+3,3/4/1801,3/4/1809,Thomas Jefferson,Vice President,Democratic-  Republican,Aaron Burr
+4,3/4/1809,3/4/1817,James Madison,United States Secretary of State,Democratic-  Republican,George Clinton
+5,3/4/1817,3/4/1825,James Monroe,United States Secretary of State,Democratic-  Republican,Daniel D. Tompkins
+6,3/4/1825,3/4/1829,John Quincy Adams,United States Secretary of State,Democratic-  Republican,John C. Calhoun
+7,3/4/1829,3/4/1837,Andrew Jackson,US Senator,Democratic,John C. Calhoun
+8,3/4/1837,3/4/1841,Martin Van Buren,Vice President,Democratic,Richard Mentor Johnson
+9,3/4/1841,4/4/1841,William Henry Harrison,United States Minister,Whig,John Tyler
+10,4/4/1841,3/4/1845,John Tyler,Vice President,Whig,Office vacant
+11,3/4/1845,3/4/1849,James K. Polk,Governor,Democratic,George M. Dallas
+12,3/4/1849,9/9/1850,Zachary Taylor,Major General of the 1st Infantry Regiment United States Army   ,Whig,Millard Fillmore
+13,9/9/1850,3/4/1853,Millard Fillmore,Vice President,Whig,Office vacant
+14,3/4/1853,3/4/1857,Franklin Pierce,Brigadier General of the 9th Infantry United States Army,Democratic,William R. King
+15,3/4/1857,3/4/1861,James Buchanan,United States Minister,Democratic,John C. Breckinridge
+16,3/4/1861,4/15/1865,Abraham Lincoln,US Representative,Republican,Hannibal Hamlin
+17,4/15/1865,3/4/1869,Andrew Johnson,Vice President, Democratic,Office vacant
+18,3/4/1869,3/4/1877,Ulysses S. Grant,Commanding General of the United States Army,Republican,Schuyler Colfax
+19,3/4/1877,3/4/1881,Rutherford B. Hayes,Governor,Republican,William A. Wheeler
+20,3/4/1881,9/19/1881,James A. Garfield,US Representative,Republican,Chester A. Arthur
+21,9/19/1881,3/4/1885,Chester A. Arthur,Vice President,Republican,Office vacant
+22,3/4/1885,3/4/1889,Grover Cleveland,Governor of New York,Democratic,Thomas A. Hendricks
+23,3/4/1889,3/4/1893,Benjamin Harrison,US Senator,Republican,Levi P. Morton
+24,3/4/1893,3/4/1897,Grover Cleveland,President,Democratic,Adlai Stevenson
+25,3/4/1897,9/14/1901,William McKinley,Governor,Republican,Garret Hobart
+26,9/14/1901,3/4/1909,Theodore Roosevelt,Vice President,Republican,Charles W. Fairbanks
+27,3/4/1909,3/4/1913,William Howard Taft,United States Secretary of War,Republican,James S. Sherman
+28,3/4/1913,3/4/1921,Woodrow Wilson,Governor,Democratic,Thomas R. Marshall
+29,3/4/1921,8/2/1923,Warren G. Harding,US Senator,Republican,Calvin Coolidge
+30,8/2/1923,3/4/1929,Calvin Coolidge,Vice President,Republican,Charles G. Dawes
+31,3/4/1929,3/4/1933,Herbert Hoover,United States Secretary of Commerce,Republican,Charles Curtis
+32,3/4/1933,1/20/1941,Franklin D. Roosevelt,Governor,Democratic,John Nance Garner
+33,4/12/1945,1/20/1953,Harry S. Truman,Vice President,Democratic,Alben W. Barkley
+34,1/20/1953,1/20/1961,Dwight D. Eisenhower,Supreme Allied Commander Europe,Republican,Richard Nixon
+35,1/20/1961,11/22/1963,John F. Kennedy,US Senator ,Democratic,Lyndon B. Johnson
+36,11/22/1963,1/20/1969,Lyndon B. Johnson,Vice President,Democratic,Hubert Humphrey
+37,1/20/1969,8/9/1974,Richard Nixon,Vice President ,Republican,Spiro Agnew
+38,8/9/1974,1/20/1977,Gerald Ford,Vice President,Republican,Nelson Rockefeller
+39,1/20/1977,1/20/1981,Jimmy Carter,Governor,Democratic,Walter Mondale
+40,1/20/1981,1/20/1989,Ronald Reagan,Governor,Republican,George H. W. Bush
+41,1/20/1989,1/20/1993,George H. W. Bush,Vice President,Republican,Dan Quayle
+42,1/20/1993,1/20/2001,Bill Clinton,Governor,Democratic,Al Gore
+43,1/20/2001,1/20/2009,George W. Bush,Governor,Republican,Dick Cheney
+44,1/20/2009,1/20/2017,Barack Obama,US Senator,Democratic,Joe Biden
+45,1/20/2017,,Donald Trump,Chairman of  The Trump Organization,Republican,Mike Pence
