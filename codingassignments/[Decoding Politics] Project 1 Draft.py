@@ -4,56 +4,52 @@ import numpy as np
 
 candidates = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'] 
 
+# def create_csv(): 
+# 	first_choice = []
+# 	for i in range(100000):
+# 		prob = random.random()
+# 		if 0 <= prob < 0.20:
+# 			first_choice.append(candidates[3]) 
+# 			# blah blah blah
+# 		elif 0.20 <= prob < 0.4: 
+# 			first_choice.append(candidates[9])
+# 			# blah blah blah
+# 		elif 0.4 <= prob < 0.5: 
+# 			first_choice.append(candidates[0])
+# 			# blah blah blah
+# 		elif 0.5 <= prob < 0.6: 
+# 			first_choice.append(candidates[6])
+# 			# blah blah blah
+# 		elif 0.6 <= prob < 0.7: 
+# 			first_choice.append(candidates[7])
+# 			# blah blah blah
+# 		elif 0.7 <= prob < 0.77: 
+# 			first_choice.append(candidates[4])
+# 			# blah blah blah
+# 		elif 0.77 <= prob < 0.84: 
+# 			first_choice.append(candidates[5])
+# 			# blah blah blah
+# 		elif 0.84 <= prob < 0.90: 
+# 			first_choice.append(candidates[8])
+# 			# blah blah blah
+# 		elif 0.90 <= prob < 0.95: 
+# 			first_choice.append(candidates[2])
+# 			# blah blah blah
+# 		elif 0.95 <= prob < 1.00: 	
+# 			first_choice.append(candidates[1])
 
-def create_csv(): 
-	# DON'T RUN ALL THE TIME
-	candidates = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'] 
+# 	vote_preferences = []
+# 	for i in range(len(first_choice)):
+# 		copy = candidates[:]
+# 		copy.remove(first_choice[i])
+# 		random.shuffle(copy)
+# 		choice = [first_choice[i]] + copy
+# 		vote_preferences.append(choice)
+# 	vote_preferences.insert(0, ['First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh', 'Eighth', 'Ninth', 'Tenth'])
 
-	first_choice = []
-	for i in range(100000):
-		prob = random.random()
-		if 0 <= prob < 0.20:
-			first_choice.append(candidates[3]) 
-			# blah blah blah
-		elif 0.20 <= prob < 0.4: 
-			first_choice.append(candidates[9])
-			# blah blah blah
-		elif 0.4 <= prob < 0.5: 
-			first_choice.append(candidates[0])
-			# blah blah blah
-		elif 0.5 <= prob < 0.6: 
-			first_choice.append(candidates[6])
-			# blah blah blah
-		elif 0.6 <= prob < 0.7: 
-			first_choice.append(candidates[7])
-			# blah blah blah
-		elif 0.7 <= prob < 0.77: 
-			first_choice.append(candidates[4])
-			# blah blah blah
-		elif 0.77 <= prob < 0.84: 
-			first_choice.append(candidates[5])
-			# blah blah blah
-		elif 0.84 <= prob < 0.90: 
-			first_choice.append(candidates[8])
-			# blah blah blah
-		elif 0.90 <= prob < 0.95: 
-			first_choice.append(candidates[2])
-			# blah blah blah
-		elif 0.95 <= prob < 1.00: 	
-			first_choice.append(candidates[1])
-
-	vote_preferences = []
-	for i in range(len(first_choice)):
-		copy = candidates[:]
-		copy.remove(first_choice[i])
-		random.shuffle(copy)
-		choice = [first_choice[i]] + copy
-		vote_preferences.append(choice)
-	vote_preferences.insert(0, ['First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh', 'Eighth', 'Ninth', 'Tenth'])
-
-	with open("./vote-preferences.csv", "wt") as file: 
-		writer = csv.writer(file)
-		writer.writerows(vote_preferences)
+# 	with open("./vote-preferences.csv", "wt") as file: 
+# 		writer = csv.writer(file)
+# 		writer.writerows(vote_preferences)
 
 def read_data(): 
 	data = np.genfromtxt("./vote-preferences.csv", delimiter=',', dtype=str)
@@ -81,13 +77,11 @@ def only_top_three(data):
 
 def setup_next_round(vote_count, candidates):
 	lowest_tally = min(vote_count)
-
-	# there's an index error here
 	lowest_index = vote_count.index(lowest_tally)
 	candidates.pop(lowest_index) 
 
 def ranked_choice(candidates, data): 
-	# data = only_top_three(data) # there's a bug here related to deleting all the candidates
+	data = only_top_three(data) # there's a bug here related to deleting all the candidates
 	winner = False
 	while not winner: 
 		vote_count = round_of_voting(candidates, data)
@@ -110,9 +104,9 @@ def proportional_voting(parties, data):
 
 def main():
 	data = read_data()
-	#print(first_past_the_post(candidates, data))
-	#ranked_choice(candidates, data)
-	print(proportional_voting(candidates, data))
+	# print(first_past_the_post(candidates, data))
+	ranked_choice(candidates, data)
+	#print(proportional_voting(candidates, data))
 
 main()
 
